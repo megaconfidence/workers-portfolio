@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Ava from '@src/assets/img/ava.jpg';
+import Prose from '../components/Prose.astro';
+
+---
+
+<BaseLayout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+>
+  <div class='container'>
+		<main class='prose text-lg dark:prose-invert'>
+      <article>
+        <div class='w-full md:flex md:items-center gap-16 mb-10'>
+          <div class="text-pretty leading-9">
+            <h1 class="text-4xl font-bold mb-4">Hi There 👋, John Here! </h1>
+            <Prose>
+              <div class="text-lg">
+<p>I am a Backend Developer from Brazil. I enjoy simplifying complex systems and sharing insights on my blog. Occasionally, I also release tools and libraries to help others in the tech community. You can also find me active on <a href="#" target="_blank">GitHub</a> and <a href="#" target="_blank">LinkedIn</a>.</p>
+              </div>
+            </Prose>
+          </div>
+          <Image src={Ava} alt="" width={300}  class="rounded-3xl rotate-3 mx-4 md:mx-0"/>
+        </div>     
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur ipsum ligula, eget efficitur lacus tincidunt quis. Morbi ac massa non quam vehicula porta ut ac purus. Nulla id dignissim nunc, sit amet molestie felis. Duis ultricies nulla at mi cursus, non aliquam libero convallis. Ut in pellentesque diam. Fusce aliquam dapibus lorem et volutpat. Etiam erat justo, scelerisque a felis sed, maximus accumsan neque. Aenean quis lacinia nisi, vel ultrices sapien. Mauris volutpat est odio, a elementum metus lobortis eu. Nunc vulputate placerat ultrices. Sed euismod condimentum posuere. Suspendisse quis elementum mi, nec dapibus purus.
+          </p><p>
+Maecenas ullamcorper nunc sed risus pellentesque, non tempus urna porttitor. Suspendisse commodo, est a iaculis consequat, diam ante cursus turpis, vitae varius magna ligula sed augue. Sed malesuada at lorem sit amet elementum. Sed fringilla ornare lectus sit amet vehicula. Sed fermentum enim eros, sit amet venenatis augue tempor in. Curabitur blandit ante eget sapien mattis, at feugiat ipsum rhoncus. Praesent fringilla tempor porttitor. Aenean feugiat, nunc et interdum ullamcorper, arcu turpis imperdiet est, semper dictum massa quam vitae lectus. Phasellus pharetra fringilla ex, ut convallis neque.
+
+          </p><p>
+          Morbi at massa vitae ante efficitur sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce et ex sed magna posuere rutrum vitae sit amet massa. Phasellus pulvinar turpis vitae elementum ullamcorper. Nulla faucibus luctus augue, nec congue massa consectetur nec. In ut turpis eu tortor mollis mattis in ut mi. Proin et lacinia mi. Vivamus ullamcorper fermentum nisl, vitae pulvinar tellus luctus et. Proin ac eleifend nibh, eu rutrum lacus. Nunc sed euismod nunc. Curabitur nulla nunc, viverra eget finibus ac, porttitor vel sem. Phasellus vel dignissim risus, eu volutpat dolor. Nullam faucibus augue odio. Nulla enim augue, consequat vitae placerat in, ultrices a tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        </div>
+        </article>
+      </article>
+    </main>
+  </div>
+</BaseLayout>
